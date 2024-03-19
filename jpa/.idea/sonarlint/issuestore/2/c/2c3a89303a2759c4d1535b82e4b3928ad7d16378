@@ -1,6 +1,13 @@
 
 ]
-java:S1220""Move this file to a named package.8–Â¦å1J$11242542-f2b5-416f-ae6c-2300de2bf9b0
-~	java:S125"<This block of commented-out lines of code should be removed.(´èÏË8¤–Â¦å1J$b391df86-5b2c-45a2-9c82-b2c37e3aab65
-~	java:S125"<This block of commented-out lines of code should be removed.(ı”¢ê8¦–Â¦å1J$3edff3ce-f5fb-4791-9c61-8605e1a51760
-m	java:S106"+Replace this use of System.out by a logger.(çÖÃÚ8¬Ä¦å1J$e9486451-ab0b-4aeb-8eb8-7a3cd60cc03a
+java:S1220""Move this file to a named package.8¤ŞÓ©å1J$74f705dc-a90b-436c-a084-98bfcdd3930c
+~	java:S125"<This block of commented-out lines of code should be removed.(´èÏË8ÀŞÓ©å1J$d5a6d015-c1ba-45b2-a9cc-a9c035b60549
+~	java:S125"<This block of commented-out lines of code should be removed.(ı”¢ê8ÁŞÓ©å1J$86f43086-c10b-44f4-80fb-462aa44bea69
+~	java:S125)"<This block of commented-out lines of code should be removed.(Š£îò8ÂŞÓ©å1J$0ca41dd0-6c64-47f4-a09c-dfa7133e6017
+~	java:S125."<This block of commented-out lines of code should be removed.(Åğ•´8ÂŞÓ©å1J$79fcda44-0469-4f75-a6d6-c3bae591b7b7
+€
+java:S1612?"8Replace this lambda with method reference 'em::persist'.(ô¦Í±üÿÿÿÿ8ÄŞÓ©å1J$1c93a142-9c5e-448e-926a-8e9feeb6365d
+r	java:S106B"+Replace this use of System.out by a logger.(Ğ¢„¯ùÿÿÿÿ8ÇŞÓ©å1J$1b882ed2-47c1-4312-90e2-1e3ef97f896a
+m	java:S106H"+Replace this use of System.out by a logger.(ê—â„8Åîà©å1J$f78607f2-7814-4a26-a0aa-430f4bcb37a7
+r	java:S106J"+Replace this use of System.out by a logger.(¥ïšçúÿÿÿÿ8¸ïá©å1J$0470e382-f836-4f7b-9bcf-79d4a05112bd
+r	java:S106L"+Replace this use of System.out by a logger.(ôÆõÍúÿÿÿÿ8èæâ©å1J$56497cf4-0031-4b4a-954d-47569be0059e
