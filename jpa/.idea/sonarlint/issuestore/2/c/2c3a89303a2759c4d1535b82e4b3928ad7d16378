@@ -1,13 +1,25 @@
 
 ]
-java:S1220""Move this file to a named package.8¤ÞÓ©å1J$74f705dc-a90b-436c-a084-98bfcdd3930c
-~	java:S125"<This block of commented-out lines of code should be removed.(´èÏË8ÀÞÓ©å1J$d5a6d015-c1ba-45b2-a9cc-a9c035b60549
-~	java:S125"<This block of commented-out lines of code should be removed.(ý”¢ê8ÁÞÓ©å1J$86f43086-c10b-44f4-80fb-462aa44bea69
-~	java:S125)"<This block of commented-out lines of code should be removed.(Š£îò8ÂÞÓ©å1J$0ca41dd0-6c64-47f4-a09c-dfa7133e6017
-~	java:S125."<This block of commented-out lines of code should be removed.(Åð•´8ÂÞÓ©å1J$79fcda44-0469-4f75-a6d6-c3bae591b7b7
-€
-java:S1612?"8Replace this lambda with method reference 'em::persist'.(ô¦Í±üÿÿÿÿ8ÄÞÓ©å1J$1c93a142-9c5e-448e-926a-8e9feeb6365d
-r	java:S106B"+Replace this use of System.out by a logger.(Ð¢„¯ùÿÿÿÿ8ÇÞÓ©å1J$1b882ed2-47c1-4312-90e2-1e3ef97f896a
-m	java:S106H"+Replace this use of System.out by a logger.(ê—â„8Åîà©å1J$f78607f2-7814-4a26-a0aa-430f4bcb37a7
-r	java:S106J"+Replace this use of System.out by a logger.(¥ïšçúÿÿÿÿ8¸ïá©å1J$0470e382-f836-4f7b-9bcf-79d4a05112bd
-r	java:S106L"+Replace this use of System.out by a logger.(ôÆõÍúÿÿÿÿ8èæâ©å1J$56497cf4-0031-4b4a-954d-47569be0059e
+java:S1220""Move this file to a named package.8‹¿¼¯å1J$8502c6bd-39e9-4938-89b6-0140aa978bd6
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(³¬¥÷ûÿÿÿÿ8•¿¼¯å1J$3b1bbf60-8461-417a-b412-b6e8f29caf3d
+ƒ	java:S125!"<This block of commented-out lines of code should be removed.(‚ƒ™Œúÿÿÿÿ8—¿¼¯å1J$12b9c29d-4adb-4109-b1e6-5fd868dfcfe0
+~	java:S1254"<This block of commented-out lines of code should be removed.(´èÏË8™¿¼¯å1J$463955e0-a70e-44ac-aadc-42c40da7e724
+~	java:S1257"<This block of commented-out lines of code should be removed.(ý”¢ê8™¿¼¯å1J$9632e8dc-df46-46ec-9cf0-ea3856eca5bf
+~	java:S125B"<This block of commented-out lines of code should be removed.(Š£îò8™¿¼¯å1J$84c1b668-1fdd-48ac-9de3-ddc4d2ebea50
+~	java:S125G"<This block of commented-out lines of code should be removed.(Åð•´8š¿¼¯å1J$37633e3a-65cc-49f5-8fbf-0b918fd6b0c3
+ƒ	java:S125X"<This block of commented-out lines of code should be removed.(ä¡™óýÿÿÿÿ8š¿¼¯å1J$6ec347fd-e363-42b7-9b7b-11b47d00991b
+}	java:S125h"<This block of commented-out lines of code should be removed.(èÙ®8š¿¼¯å1J$8ebb2b26-b3fe-41ec-a1b0-209855d11888
+ƒ	java:S125m"<This block of commented-out lines of code should be removed.(ýÊÒÂþÿÿÿÿ8š¿¼¯å1J$9161a8ce-9945-4451-a7d4-65207aba9ce8
+~	java:S125q"<This block of commented-out lines of code should be removed.(È¨Üû8š¿¼¯å1J$dcc6baca-6562-43b0-8d38-aa7d9fe98612
+ƒ	java:S125w"<This block of commented-out lines of code should be removed.(‡Õ‚ôúÿÿÿÿ8š¿¼¯å1J$21c9089c-e288-444d-9d44-834a3fe3feae
+ƒ	java:S125z"<This block of commented-out lines of code should be removed.(Ÿ¡›´ÿÿÿÿÿ8š¿¼¯å1J$e4188293-8b81-4f54-b476-c3759491ee8a
+ƒ	java:S125}"<This block of commented-out lines of code should be removed.(Šµóãøÿÿÿÿ8š¿¼¯å1J$f27bc970-d679-4590-a04f-1fc7a4be9bf0
+	java:S125€"<This block of commented-out lines of code should be removed.(±ˆ˜»8š¿¼¯å1J$dc697b3b-53ec-476c-bd85-a4fb02e22d74
+„	java:S125ƒ"<This block of commented-out lines of code should be removed.(ÔÈ›°üÿÿÿÿ8š¿¼¯å1J$b5bbc738-6871-4fde-8ce6-2594f2d95dd7
+„	java:S125†"<This block of commented-out lines of code should be removed.(ƒˆŒîùÿÿÿÿ8›¿¼¯å1J$06bb670b-4443-4542-845e-afefd134ad37
+o
+java:S1128",Remove this unused import 'entity.Customer'.(éþ²¢8œ¿¼¯å1J$1f8fa1fb-92b7-47dc-952e-613a6236f58e
+s
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8œ¿¼¯å1J$8c7591d4-9fcf-414e-be75-02e580e9a5fd
+s
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8œ¿¼¯å1J$3f4d6cbe-33d9-4a46-956f-6500c5ffcb58
