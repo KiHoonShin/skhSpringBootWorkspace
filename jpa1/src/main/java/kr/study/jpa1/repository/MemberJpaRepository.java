@@ -41,7 +41,9 @@ public class MemberJpaRepository implements MemberRepository{
 
     @Override
     public Member findById(Long id) {
-        return null;
+        return em.createQuery("select m from Member m where m.id=:id" , Member.class)
+                .setParameter("id",id)
+                .getSingleResult();
     }
 
     @Override

@@ -26,6 +26,10 @@ public class MemberService {
         return m.getId();
     }
 
+    public Member findByLoginId(String loginId){
+        return memberRepository.findByLoginId(loginId);
+    }
+
     private void validateMemberId(Member member) throws IllegalStateException{
         if(memberRepository.findByLoginId(member.getLoginId()) != null){
             throw new IllegalStateException("이미 존재하는 회원 아이디가 있습니다");
@@ -34,6 +38,10 @@ public class MemberService {
 
     public List<Member> getList(){
         return memberRepository.findAll();
+    }
+
+    public Member findById(Long id){
+        return memberRepository.findById(id);
     }
 
     @Transactional
