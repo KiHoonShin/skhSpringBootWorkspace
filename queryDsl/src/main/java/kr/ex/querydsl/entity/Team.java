@@ -1,5 +1,6 @@
-package kr.ex.querydsl.domain;
+package kr.ex.querydsl.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -18,6 +19,7 @@ public class Team {
     private Long id;
     private String name;
     @OneToMany(mappedBy = "team")
+    @JsonManagedReference
     private List<Member> members = new ArrayList<>();
     public Team(String name) {
         this.name = name;

@@ -3,8 +3,8 @@ package kr.ex.querydsl;
 import com.querydsl.core.QueryResults;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.persistence.EntityManager;
-import kr.ex.querydsl.domain.Member;
-import kr.ex.querydsl.domain.Team;
+import kr.ex.querydsl.entity.Member;
+import kr.ex.querydsl.entity.Team;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-import static kr.ex.querydsl.domain.QMember.member;
+import static kr.ex.querydsl.entity.QMember.member;
 import static org.assertj.core.api.Assertions.*;
 @SpringBootTest
 @Transactional
@@ -47,10 +47,9 @@ class QueryDslTest1 {
 
     @Test
     void testDomain(){
-        Member member5 = new Member("member1", 10);
-        em.persist(member5);
-        List<Member> list = query.selectFrom(member).fetch();
-        assertThat(list.size()).isEqualTo(5);
+
+        Member findMember = em.find(Member.class, 28L);
+        assertThat(findMember.getUsername()).isEqualTo("member27");
     }
 
     @Test
