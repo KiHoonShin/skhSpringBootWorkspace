@@ -2,9 +2,7 @@ spring:
   output:
     ansi:
       enabled: always
-  profiles:
-    active: local
-    
+
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/sampleDB?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true

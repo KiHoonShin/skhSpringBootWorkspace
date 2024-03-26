@@ -1,23 +1,27 @@
 package kr.ex.querydsl;
 
 import com.querydsl.core.BooleanBuilder;
+import com.querydsl.core.Tuple;
 import com.querydsl.core.types.Projections;
-import com.querydsl.core.types.dsl.BooleanExpression;
+import com.querydsl.core.types.dsl.CaseBuilder;
+import com.querydsl.jpa.JPAExpressions;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.persistence.EntityManager;
-import kr.ex.querydsl.dto.MemberDto;
-import kr.ex.querydsl.entity.*;
+import kr.ex.querydsl.domain.Member;
+import kr.ex.querydsl.domain.MemberDto;
+import kr.ex.querydsl.domain.QMember;
+import kr.ex.querydsl.domain.Team;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.Commit;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-import static kr.ex.querydsl.entity.QMember.member;
+import static kr.ex.querydsl.domain.QMember.member;
+import static kr.ex.querydsl.domain.QTeam.team;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
@@ -53,7 +57,7 @@ public class QueryDslTest3 {
     @Test
     void dtoByJQPL(){
         List<MemberDto> result = em.createQuery(
-                        "select new kr.ex.querydsl.entity.MemberDto(m.username, m.age) " +
+                        "select new kr.ex.querydsl.domain.MemberDto(m.username, m.age) " +
                                 "from Member m", MemberDto.class)
                 .getResultList();
     }
@@ -90,69 +94,4 @@ public class QueryDslTest3 {
                 .where(builder)
                 .fetch();
     }
-
-    private List<Member> searchMember2(String usernameCond, Integer ageCond) {
-        return query
-                .selectFrom(member)
-                .where(usernameEq(usernameCond), ageEq(ageCond))
-                .fetch();
-    }
-    private BooleanExpression usernameEq(String usernameCond) {
-        return usernameCond != null ? member.username.eq(usernameCond) : null;
-    }
-    private BooleanExpression ageEq(Integer ageCond) {
-        return ageCond != null ? member.age.eq(ageCond) : null;
-    }
-
-    @Test
-    @Commit
-    public void bulkUpdate(){
-        // 벌크 연산 => 한꺼번에 수정, 삭제 => 바로 db로 쿼리를 날린다 : flush()한다
-        long count = query
-                .update(member)
-                .set(member.username, "비회원")
-                .where(member.age.lt(28))
-                .execute();
-
-        // 영속성 컨테이너 초기화
-        em.flush();
-        em.clear();
-
-        System.out.println("count = " + count);
-        System.out.println("===================");
-        List<Member> list = query.selectFrom(member).fetch();
-        list.forEach(m -> System.out.println("m = " + m));
-
-        assertThat(count).isEqualTo(2);
-    }
-
-//    //회원명, 팀명, 나이(ageGoe, ageLoe)
-//    public List<MemberTeamDto> search(MemberSearchCondition condition) {
-//        return query
-//                .select(new QMemberTeamDto(
-//                        member.id,
-//                        member.username,
-//                        member.age,
-//                        team.id,
-//                        team.name))
-//                .from(member)
-//                .leftJoin(member.team, team)
-//                .where(usernameEq(condition.getUsername()),
-//                        teamNameEq(condition.getTeamName()),
-//                        ageGoe(condition.getAgeGoe()),
-//                        ageLoe(condition.getAgeLoe()))
-//                .fetch();
-//    }
-//    private BooleanExpression usernameEq(String username) {
-//        return isEmpty(username) ? null : member.username.eq(username);
-//    }
-//    private BooleanExpression teamNameEq(String teamName) {
-//        return isEmpty(teamName) ? null : team.name.eq(teamName);
-//    }
-//    private BooleanExpression ageGoe(Integer ageGoe) {
-//        return ageGoe == null ? null : member.age.goe(ageGoe);
-//    }
-//    private BooleanExpression ageLoe(Integer ageLoe) {
-//        return ageLoe == null ? null : member.age.loe(ageLoe);
-//    }
 }

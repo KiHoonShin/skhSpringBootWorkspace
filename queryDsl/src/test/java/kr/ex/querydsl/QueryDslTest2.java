@@ -5,9 +5,9 @@ import com.querydsl.core.types.dsl.CaseBuilder;
 import com.querydsl.jpa.JPAExpressions;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.persistence.EntityManager;
-import kr.ex.querydsl.entity.Member;
-import kr.ex.querydsl.entity.QMember;
-import kr.ex.querydsl.entity.Team;
+import kr.ex.querydsl.domain.Member;
+import kr.ex.querydsl.domain.QMember;
+import kr.ex.querydsl.domain.Team;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +16,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-import static kr.ex.querydsl.entity.QMember.member;
-import static kr.ex.querydsl.entity.QTeam.team;
+import static kr.ex.querydsl.domain.QMember.member;
+import static kr.ex.querydsl.domain.QTeam.team;
 import static org.assertj.core.api.Assertions.*;
 @SpringBootTest
 @Transactional

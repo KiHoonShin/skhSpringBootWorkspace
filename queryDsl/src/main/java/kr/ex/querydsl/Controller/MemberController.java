@@ -1,4 +1,4 @@
-package kr.ex.querydsl.controller;
+package kr.ex.querydsl.Controller;
 
 import kr.ex.querydsl.dto.MemberSearchCond;
 import kr.ex.querydsl.dto.MemberTeamDto;
