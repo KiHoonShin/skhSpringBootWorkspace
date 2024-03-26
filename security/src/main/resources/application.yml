@@ -1,3 +1,15 @@
+spring:
+  profiles:
+    active: local
+    group:
+      local: common, secret
+
+---
+spring:
+  config:
+    activate:
+      on-profile: common
+
 server:
   port: 8081
   servlet:
