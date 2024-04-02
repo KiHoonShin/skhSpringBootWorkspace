@@ -9,16 +9,6 @@ spring:
   config:
     activate:
       on-profile: common
-
-server:
-  port: 8081
-  servlet:
-    context-path: /
-    encoding:
-      charset: UTF-8
-      enabled: true
-      force: true
-
   jpa:
     hibernate:
       ddl-auto: update #create update none
@@ -29,3 +19,12 @@ server:
     view:
       prefix: templates/
       suffix: .html
+
+server:
+  port: 8081
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
